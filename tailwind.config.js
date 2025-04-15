@@ -25,6 +25,9 @@ module.exports = {
           90: "0.9",
           100: "1",
         },
+        main: {
+          primary: "#7065F0",
+        },
         text: {
           accent: "#6851FF",
           paragraph: "#B5B8CB",
@@ -36,6 +39,7 @@ module.exports = {
           200: "#3D1EFE",
           "200-light": "rgba(61, 30, 254, 0.2)",
           300: "#6851FF",
+          500: "#7065F0",
           600: "#3D1EFE",
           700: "#3D1EFE",
           800: "#3118D6",
@@ -99,6 +103,14 @@ module.exports = {
             fontWeight: "700",
           },
         ],
+        "badge-md-bold": [
+          "12px",
+          {
+            lineHeight: "1",
+            letterSpacing: "0.5%",
+            fontWeight: "700",
+          },
+        ],
         "body-md-bold": [
           "16px",
           {
@@ -145,6 +157,14 @@ module.exports = {
             lineHeight: "160%",
             letterSpacing: "-0.5%",
             fontWeight: "500",
+          },
+        ],
+        "body-xxl-bolder": [
+          "24px",
+          {
+            lineHeight: "150%",
+            letterSpacing: "-1px",
+            fontWeight: "800",
           },
         ],
       },

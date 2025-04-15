@@ -1,8 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer components {
+  .badge {
+    @apply flex items-center gap-1 absolute -top-[18px] -left-[8px] bg-main-primary rounded-lg rounded-bl-none px-2 py-1 px-6 h-8 justify-center;
+  }
+
+  .heart:hover {
+    circle {
+      @apply stroke-secondary-100;
+    }
+  }
+
+  .heart:focus {
+    @apply outline-none;
+    circle {
+      @apply stroke-secondary-100 fill-secondary-200-light ;
+    }
+  }
+  .heart:active,
+  .heart.selected {
+    @apply outline-none;
+    circle {
+      @apply stroke-secondary-100 fill-secondary-300 ;
+    }
+    path {
+      @apply stroke-base-0;
+    }
+  }
+
   .btn {
     @apply rounded-lg border-2 px-[34px] py-3 leading-[150%] transition-colors duration-200;
   }
