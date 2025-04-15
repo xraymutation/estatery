@@ -2,7 +2,7 @@
   "name": "estatery",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://xraymutation.github.io/estatery",
+  "homepage": "https://xraymutation.github.io/estatery/",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
@@ -49,7 +49,6 @@
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.16",
-    "gh-pages": "^6.3.0",
     "tailwindcss": "^3.4.17"
   }
 }
