@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/estatery/static/css/main.6e1139a0.css",
-    "main.js": "/estatery/static/js/main.b5755052.js",
+    "main.js": "/estatery/static/js/main.cc44199a.js",
     "static/js/453.2ea61b29.chunk.js": "/estatery/static/js/453.2ea61b29.chunk.js",
     "static/media/hero-background.png": "/estatery/static/media/hero-background.4718e7ccb6920a66a28b.png",
     "index.html": "/estatery/index.html",
     "main.6e1139a0.css.map": "/estatery/static/css/main.6e1139a0.css.map",
-    "main.b5755052.js.map": "/estatery/static/js/main.b5755052.js.map",
+    "main.cc44199a.js.map": "/estatery/static/js/main.cc44199a.js.map",
     "453.2ea61b29.chunk.js.map": "/estatery/static/js/453.2ea61b29.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6e1139a0.css",
-    "static/js/main.b5755052.js"
+    "static/js/main.cc44199a.js"
   ]
 }
