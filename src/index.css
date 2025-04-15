@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply rounded-lg border-2 px-[34px] py-3 leading-[150%] transition-colors duration-200;
+  }
+
+  .btn-primary {
+    @apply text-base-0 bg-text-accent border-text-accent;
+  }
+
+  .btn-primary:hover {
+    @apply bg-secondary-100 border-secondary-100;
+  }
+
+  .btn-primary:focus {
+    @apply bg-secondary-300 border-secondary-800;
+  }
+
+  .btn-primary:active {
+    @apply bg-secondary-600 border-secondary-600;
+  }
+
+  .btn-primary:disabled {
+    @apply bg-text-paragraph border-text-paragraph;
+  }
+
+  .btn-secondary {
+    @apply text-base-1000 bg-base-0 border-base-300;
+  }
+
+  .btn-secondary:hover {
+    @apply border-secondary-300;
+  }
+
+  .btn-secondary:focus {
+    @apply text-secondary-300 border-secondary-300;
+  }
+
+  .btn-secondary:active {
+    @apply text-secondary-1000 border-secondary-1000;
+  }
+
+  .btn-secondary:disabled {
+    @apply text-base-400 border-base-300;
+  }
+
+  .btn-tab {
+    @apply text-base-600 bg-transparent border-0;
+  }
+
+  .btn-tab-active {
+    @apply bg-base-0 text-secondary-300 border-2 border-base-200 font-bold;
+  }
+
+  .btn-tab-active:hover,
+  .btn-tab-active:focus,
+  .btn-tab-active:active {
+    @apply text-secondary-300 bg-secondary-0;
+  }
+
+  .btn-tab-active:focus {
+    @apply bg-secondary-200-light;
+  }
+
+  .btn-tab-active:active {
+    @apply border-secondary-100;
+  }
+}

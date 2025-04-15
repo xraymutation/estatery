@@ -1,31 +1,30 @@
-import React from 'react';
-import {Link} from "react-router";
+import React from "react";
+import { Link } from "react-router";
 import Logo from "../svg/Logo";
 import Menu from "../Menu";
 import Button from "../Button";
-import styles from './Header.module.scss';
 
 const Header = () => {
-    return (
-        <div className={`row ${styles.header}`}>
-            <div className='col col-xs-12 col-md-3'>
-                <Link to='/'>
-                    <Logo/>
-                </Link>
-            </div>
-            <Menu/>
-            <div className='col col-xs-12 col-md-3'>
-                <div className='row between-sm'>
-                    <div className='col col-xs-12 col-sm-6'>
-                        <Button type='secondary' text='Login'/>
-                    </div>
-                    <div className='col col-xs-12 col-sm-6'>
-                        <Button type='primary' text='Sign up'/>
-                    </div>
-                </div>
-            </div>
+  return (
+    <div className="flex flex-wrap items-center justify-between py-8 px-20">
+      <div className="w-full md:w-1/4">
+        <Link to="/">
+          <Logo />
+        </Link>
+      </div>
+      <Menu />
+      <div className="w-full md:w-1/4">
+        <div className="flex justify-between">
+          <div className="w-1/2 pr-2">
+            <Button type="secondary" text="Login" />
+          </div>
+          <div className="w-1/2 pl-2">
+            <Button type="primary" text="Sign up" />
+          </div>
         </div>
-    );
+      </div>
+    </div>
+  );
 };
 
 export default Header;

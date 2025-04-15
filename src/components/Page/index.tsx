@@ -1,23 +1,21 @@
-import React from 'react';
+import React, { ReactNode } from "react";
 import Header from "../Header";
-import Footer from '../Footer';
-import styles from './Page.module.scss';
+import Footer from "../Footer";
 
 interface PageTypes {
-    children: any;
+  children: ReactNode;
 }
 
-const Page = ({children}: PageTypes) => {
-    return (
-        <div className='row page center'>
-            <div className={`col col-xs-12 ${styles.boxed}`}>
-                <Header/>
-                {children}
-                <Footer/>
-            </div>
-
-        </div>
-    );
+const Page = ({ children }: PageTypes) => {
+  return (
+    <div className="flex flex-col items-center w-full font-jakarta">
+      <div className="w-full max-w-[1440px] mx-auto">
+        <Header />
+        {children}
+        <Footer />
+      </div>
+    </div>
+  );
 };
 
 export default Page;
