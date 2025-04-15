@@ -8,12 +8,10 @@ interface PageTypes {
 
 const Page = ({ children }: PageTypes) => {
   return (
-    <div className="flex flex-col items-center w-full font-jakarta">
-      <div className="w-full max-w-[1440px] mx-auto">
-        <Header />
-        {children}
-        <Footer />
-      </div>
+    <div className="flex flex-col items-center w-full font-jakarta ">
+      <Header />
+      {children}
+      <Footer />
     </div>
   );
 };

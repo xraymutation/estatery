@@ -12,11 +12,11 @@ import {paths} from '../config/paths';
 const routes = (
     <Routes>
         <Route index path={paths.home} element={<HomeView/>}/>
-        <Route exact path={paths.sell} element={<SellView/>}/>
-        <Route exact path={paths.buy} element={<BuyView/>}/>
-        <Route exact path={paths.rent} element={<RentView/>}/>
-        <Route exact path={paths.resources} element={<ResourcesView/>}/>
-        <Route exact path={paths.manageProperty} element={<ManagePropertyView/>}/>
+        <Route path={paths.sell} element={<SellView/>}/>
+        <Route path={paths.buy} element={<BuyView/>}/>
+        <Route path={paths.rent} element={<RentView/>}/>
+        <Route path={paths.resources} element={<ResourcesView/>}/>
+        <Route path={paths.manageProperty} element={<ManagePropertyView/>}/>
     </Routes>
 );
 

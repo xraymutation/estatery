@@ -4,7 +4,7 @@ import { Link } from "react-router";
 
 const Menu = () => {
   return (
-    <div className="col col-xs-12 col-sm-6">
+    <div className="w-full md:w-1/2">
       <ul className="flex flex-row h-full items-center list-none">
         {menu?.map((item) => (
           <li key={item.url} className="flex">

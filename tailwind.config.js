@@ -162,9 +162,12 @@ module.exports = {
           },
         },
       },
+      backgroundImage: {
+        hero: "url('../public/images/hero-background.png')",
+        heroMap: "url('../public/images/map-background.png')",
+        testimonials: "url('../public/images/testimonials-background.png')",
+      },
     },
   },
-  plugins: [
-    require("@tailwindcss/typography"),
-  ],
+  plugins: [require("@tailwindcss/typography")],
 };

@@ -4,9 +4,15 @@ interface ButtonTypes {
   type: "primary" | "secondary" | "tab";
   text: string;
   isActive?: boolean;
+  onClick?: () => void;
 }
 
-const Button = ({ type = "secondary", text, isActive }: ButtonTypes) => {
+const Button = ({
+  type = "secondary",
+  text,
+  isActive,
+  onClick,
+}: ButtonTypes) => {
   const getButtonClasses = () => {
     switch (type) {
       case "primary":
@@ -16,13 +22,20 @@ const Button = ({ type = "secondary", text, isActive }: ButtonTypes) => {
       case "tab":
         return isActive
           ? "btn btn-tab btn-tab-active text-body-md-bold"
-          : "btn btn-tab text-body-md-bold";
+          : "btn btn-tab text-body-md";
       default:
         return "btn btn-secondary text-body-md-bold";
     }
   };
 
-  return <button className={getButtonClasses()}>{text}</button>;
+  return (
+    <button
+      className={`${getButtonClasses()} capitalize`}
+      onClick={onClick}
+    >
+      {text}
+    </button>
+  );
 };
 
 export default Button;

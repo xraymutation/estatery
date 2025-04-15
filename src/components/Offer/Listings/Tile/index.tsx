@@ -4,8 +4,9 @@ import Heart from "../../../Heart";
 
 const Tile = (data: Estate) => {
   const { img, type, title, address, price, isFavourite } = data;
+
   return (
-    <div className="w-full md:w-1/3 p-4">
+    <div className="w-full p-0">
       <img src={img} alt="" width={344.18} height={200} />
       <span className="badge">{type}</span>
       <div className="flex flex-col">

@@ -1,14 +1,15 @@
-import React from 'react';
+import React from "react";
 import Page from "../components/Page";
-import Listings from "../components/Offer/Listings";
+import Offer from "../components/Offer";
+import Hero from "../components/Hero";
 
 const HomeView = () => {
-    return (
-        <Page>
-            <Listings/>
-
-        </Page>
-    );
+  return (
+    <Page>
+      <Hero />
+      <Offer />
+    </Page>
+  );
 };
 
 export default HomeView;

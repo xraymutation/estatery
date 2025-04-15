@@ -6,7 +6,7 @@ import Button from "../Button";
 
 const Header = () => {
   return (
-    <div className="flex flex-wrap items-center justify-between py-8 px-20">
+    <div className="flex flex-wrap w-full max-w-[1440px] items-center justify-between py-8 px-20">
       <div className="w-full md:w-1/4">
         <Link to="/">
           <Logo />
@@ -14,13 +14,9 @@ const Header = () => {
       </div>
       <Menu />
       <div className="w-full md:w-1/4">
-        <div className="flex justify-between">
-          <div className="w-1/2 pr-2">
-            <Button type="secondary" text="Login" />
-          </div>
-          <div className="w-1/2 pl-2">
-            <Button type="primary" text="Sign up" />
-          </div>
+        <div className="flex justify-end gap-6">
+          <Button type="secondary" text="Login" />
+          <Button type="primary" text="Sign up" />
         </div>
       </div>
     </div>
