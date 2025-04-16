@@ -39,6 +39,7 @@ module.exports = {
           200: "#3D1EFE",
           "200-light": "rgba(61, 30, 254, 0.2)",
           300: "#6851FF",
+          400: "#DED1FA",
           500: "#7065F0",
           600: "#3D1EFE",
           700: "#3D1EFE",
@@ -165,6 +166,14 @@ module.exports = {
             lineHeight: "150%",
             letterSpacing: "-1px",
             fontWeight: "800",
+          },
+        ],
+        "menu-xs-regular": [
+          "26px",
+          {
+            fontWeight: "400",
+            lineHeight: "150%",
+            letterSpacing: "0%",
           },
         ],
       },

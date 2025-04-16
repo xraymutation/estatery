@@ -3,16 +3,22 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import { TabsProvider } from "./contexts/tabs";
+import { MenuProvider } from "./contexts/menu";
 import reportWebVitals from "./reportWebVitals";
+import { TestimonialsProvider } from "./contexts/testimonials";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <TabsProvider initialTab="apartment">
-      <App />
-    </TabsProvider>
+    <TestimonialsProvider>
+      <MenuProvider>
+        <TabsProvider initialTab="apartment">
+          <App />
+        </TabsProvider>
+      </MenuProvider>
+    </TestimonialsProvider>
   </React.StrictMode>
 );
 

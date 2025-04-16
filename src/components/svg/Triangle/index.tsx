@@ -1,6 +1,6 @@
 import React from "react";
 
-const Triangle = () => {
+const Triangle = ({ color = '#6851FF' }: { color: string }) => {
   return (
     <svg
       version="1.1"
@@ -10,9 +10,9 @@ const Triangle = () => {
       width="8px"
       height="8px"
       viewBox="0 0 8 8"
-      enable-background="new 0 0 8 8"
+      enableBackground="new 0 0 8 8"
     >
-        <polyline fill="#6851FF" points="0,0 8,0 8,8 " />
+        <polyline fill={color} points="0,0 8,0 8,8 " />
     </svg>
   );
 };

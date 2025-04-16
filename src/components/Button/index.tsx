@@ -30,7 +30,7 @@ const Button = ({
 
   return (
     <button
-      className={`${getButtonClasses()} capitalize`}
+      className={`${getButtonClasses()} capitalize xs:w-full md:w-auto`}
       onClick={onClick}
     >
       {text}

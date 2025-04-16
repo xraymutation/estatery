@@ -12,7 +12,7 @@ const Tabs = () => {
 
   return (
     <div className="flex w-full items-center justify-center">
-      <div className="flex flex-wrap gap-2 inline-block bg-secondary-0-light border border-base-300 rounded-lg p-2 mt-20">
+      <div className="flex w-full md:w-auto mx-6 md:mx-0 flex-wrap gap-2 inline-block bg-secondary-0-light border border-base-300 rounded-lg p-2 mt-20 justify-around">
         {types.map((type) => (
           <Button
             key={type}
