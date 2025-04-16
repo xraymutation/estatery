@@ -104,6 +104,30 @@ module.exports = {
             fontWeight: "700",
           },
         ],
+        "tile-xs-regular": [
+          "8px",
+          {
+            lineHeight: "150%",
+            letterSpacing: "-1%",
+            fontWeight: "500",
+          },
+        ],
+        "tile-md-regular": [
+          "12px",
+          {
+            lineHeight: "150%",
+            letterSpacing: "-1%",
+            fontWeight: "500",
+          },
+        ],
+        "tile-md-bold": [
+          "12px",
+          {
+            lineHeight: "150%",
+            letterSpacing: "-1%",
+            fontWeight: "700",
+          },
+        ],
         "badge-md-bold": [
           "12px",
           {
