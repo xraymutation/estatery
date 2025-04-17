@@ -9,7 +9,7 @@ const TestimonialsSlider = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev: number) => (prev + 1) % entries.length);
-    }, 500000);
+    }, 5000);
 
     return () => clearInterval(timer);
   }, [setCurrentSlide]);
