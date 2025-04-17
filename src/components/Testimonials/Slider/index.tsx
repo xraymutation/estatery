@@ -9,7 +9,7 @@ const TestimonialsSlider = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev: number) => (prev + 1) % entries.length);
-    }, 5000);
+    }, 500000);
 
     return () => clearInterval(timer);
   }, [setCurrentSlide]);
@@ -21,7 +21,7 @@ const TestimonialsSlider = () => {
         return (
           <div
             key={name}
-            className={`w-full h-full slider-item text-center mb-8 transition-opacity duration-500 ease-in-out ${
+            className={`w-full h-full slider-item text-center mb-12 transition-opacity duration-500 ease-in-out ${
               currentSlide === index ? "opacity-100" : "opacity-0"
             }`}
             style={{

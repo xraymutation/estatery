@@ -5,4 +5,7 @@ export const paths = {
     rent: "/rent",
     manageProperty: "/manage-property",
     resources: "/resources",
+    faq: "/faq",
+    helpCenter: "/help-center",
+    terms: "/terms",
 };
